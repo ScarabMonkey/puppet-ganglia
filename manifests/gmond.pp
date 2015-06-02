@@ -61,7 +61,7 @@
 #   -family
 #
 #   defaults to:
-#   [ { port => 8659 } ]
+#   [ { port => 8649 } ]
 #
 #
 # === Examples
@@ -116,7 +116,7 @@ class ganglia::gmond (
   $udp_recv_channel               = [
     { mcast_join => '239.2.11.71', port => 8649, bind => '239.2.11.71' }
   ],
-  $tcp_accept_channel             = [ { port => 8659 } ],
+  $tcp_accept_channel             = [ { port => 8649 } ],
 ) inherits ganglia::params {
   validate_string($globals_deaf)
   validate_string($globals_host_dmax)
